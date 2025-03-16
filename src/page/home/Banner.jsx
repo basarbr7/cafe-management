@@ -1,7 +1,7 @@
 import React from "react";
-import banner from "../../../assets/banner.jpg"
-import Image from "../../../layer/Image";
-import Container from "../../../component/Container";
+import banner from "../../assets/banner.jpg"
+import Image from "../../layer/Image";
+import Container from "../../component/Container";
 import { Link } from "react-router-dom";
 
 

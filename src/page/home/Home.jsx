@@ -1,6 +1,6 @@
 import React from 'react'
-import Banner from './banner/Banner'
-import Menu from './banner/Menu'
+import Banner from './Banner'
+import Menu from './Menu'
 
 
 const Home = () => {

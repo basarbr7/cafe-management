@@ -1,14 +1,14 @@
 import React from 'react'
-import Container from '../../../component/Container';
-import Heading from '../../../component/Heading';
+import Container from '../../component/Container';
+import Heading from '../../component/Heading';
 import { Link } from 'react-router-dom';
 
 const Menu = () => {
     const items = [
-      { name: "Espresso", price: "$3", image: "/expre.jpg" },
-      { name: "Cappuccino", price: "$4", image: "/capp.jpg" },
-      { name: "Latte", price: "$4.5", image: "/lattle.jpg" },
-      { name: "Macchiato", price: "$4.5", image: "/macc.jpg" },
+      { name: "Espresso", coffee: "Coffee: 50%", milk:"Milk:50%", price: "$3", image: "/expre.jpg" },
+      { name: "Cappuccino", coffee: "Coffee: 50%", milk:"Milk:50%", price: "$4", image: "/capp.jpg" },
+      { name: "Latte", coffee: "Coffee: 50%", milk:"Milk:50%", price: "$4.5", image: "/lattle.jpg" },
+      { name: "Macchiato", coffee: "Coffee: 50%", milk:"Milk:50%", price: "$4.5", image: "/macc.jpg" },
     ];
   
     return (
@@ -21,6 +21,7 @@ const Menu = () => {
             <div key={index} className="bg-white p-5 rounded-lg shadow-md">
               <img src={item.image} alt={item.name} className="w-full h-40 object-cover rounded-md" />
               <h3 className="text-xl font-semibold mt-3">{item.name}</h3>
+              <p className=''>{item.coffee} | {item.milk}</p>
               <p className="text-lg text-gray-600">{item.price}</p>
               <Link className='bg-button inline-block px-4 py-2 mt-2 cursor-pointer '>Order Now</Link>
             </div>
