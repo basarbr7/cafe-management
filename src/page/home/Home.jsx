@@ -1,12 +1,13 @@
 import React from 'react'
 import Container from '../../component/Container'
+import Banner from './Banner'
 
 const Home = () => {
   return (
     <div>
-      <Container>
-        This is Home page
-      </Container>
+      
+        <Banner/>
+      
     </div>
   )
 }
