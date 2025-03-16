@@ -1,12 +1,14 @@
 import React from 'react'
-import Container from '../../component/Container'
-import Banner from './Banner'
+import Banner from './banner/Banner'
+import Menu from './banner/Menu'
+
 
 const Home = () => {
   return (
     <div>
       
         <Banner/>
+        <Menu/>
       
     </div>
   )

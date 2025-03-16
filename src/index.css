@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+
+@theme {
+    --font-Clicker: "Clicker Script", cursive;
+    --color-button: #F9C06A
+}
