@@ -9,7 +9,7 @@ const User = () => {
             <PiShoppingCartSimpleLight className='text-3xl transform scale-x-[-1]'/>
             <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs px-1 rounded-full">0</span>
         </Link>
-        <Link to="/login" className="px-3 py-1 border border-yellow-400 rounded hover:bg-yellow-400 hover:text-black transition-all duration-700 ">
+        <Link to="/login" className="px-3 py-1 border border-yellow-400 rounded bg-yellow-400 text-black hover:bg-transparent hover:text-white transition-all duration-700 ">
         Login
         </Link>
     </div>

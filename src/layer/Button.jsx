@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Button = ({className, text, to}) => {
   return (
     <>
-        <Link to={to} className={`bg-button px-4 py-3 ${className}`}>{text}</Link>
+        <Link to={to} className={`bg-button px-4 py-3 inline-block ${className}`}>{text}</Link>
     </>
   )
 }

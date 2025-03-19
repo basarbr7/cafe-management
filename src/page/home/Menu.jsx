@@ -2,6 +2,7 @@ import React from 'react'
 import Container from '../../component/Container';
 import Heading from '../../component/Heading';
 import { Link } from 'react-router-dom';
+import Button from '../../layer/Button';
 
 const Menu = () => {
     const items = [
@@ -12,7 +13,7 @@ const Menu = () => {
     ];
   
     return (
-      <div className="py-20 text-center">
+      <div className="pt-20 text-center">
        <Container>
         <Heading h1="Our Menu" p="Explore all flavours of coffee with us. There is always a new cup worth experiencing" classLink="mb-10 text-xl"/>
        
@@ -23,7 +24,7 @@ const Menu = () => {
               <h3 className="text-xl font-semibold mt-3">{item.name}</h3>
               <p className=''>{item.coffee} | {item.milk}</p>
               <p className="text-lg text-gray-600">{item.price}</p>
-              <Link className='bg-button inline-block px-4 py-2 mt-2 cursor-pointer '>Order Now</Link>
+              <Button className="mt-2" text="Order Now" />
             </div>
           ))}
         </div>
