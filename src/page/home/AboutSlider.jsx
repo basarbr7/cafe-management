@@ -10,7 +10,7 @@ import Heading from '../../component/Heading';
 function SampleNextArrow(props) {
     const { onClick } = props;
     return (
-      <div className="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-1/2 -mt-7 bg-[#F9C06A] py-3 px-4 cursor-pointer "
+      <div className="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-1/2 ml-[6px] -mt-7 bg-[#F9C06A] py-3 px-4 cursor-pointer "
         onClick={onClick}>
             <FaLongArrowAltLeft />
       </div>
@@ -20,7 +20,7 @@ function SampleNextArrow(props) {
   function SamplePrevArrow(props) {
     const { onClick } = props;
     return (
-      <div className="absolute top-1/2 right-0 -translate-y-1/2 translate-x-1/2 -mt-7 bg-[#F9C06A] py-3 px-4 cursor-pointer z-10"
+      <div className="absolute top-1/2 right-0 -translate-y-1/2 translate-x-1/2 mr-[5px] -mt-7 bg-[#F9C06A] py-3 px-4 cursor-pointer z-10"
       onClick={onClick}>
         <FaLongArrowAltRight />
       </div>
@@ -63,10 +63,10 @@ const AboutSlider = () => {
       ]
     
   return (
-    <div className='pt-20 text-center'>
+    <div className='pt-20 text-center aboutSlide mb-20'>
       <Heading h1="Our coffee perfection feedback" p="Our customers has amazing things to say about us" classLink="mb-11" />
-          <Container className="!max-w-[980px] mx-auto">
-              <Slider {...settings} className=''>
+          <Container className="!max-w-[1000px] mx-auto">
+              <Slider {...settings}>
                   {imageItem.map((item)=>(
                     <div className='h-[580px]'>
                       <div key={item.id} className='h-[524px] bg-[#FFF9F1] border-[1px] border-[#F9C06A] relative outline-none'>

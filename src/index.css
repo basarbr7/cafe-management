@@ -5,3 +5,8 @@
     --font-Clicker: "Clicker Script", cursive;
     --color-button: #F9C06A
 }
+
+.aboutSlide .slick-track{
+    display: flex;
+    gap: 10px;
+}
